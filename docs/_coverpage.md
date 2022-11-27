@@ -6,6 +6,6 @@
 
 [Github](https://github.com/Sakura1943)
 [Blog](https://blog.sakunia.tk)
-[Get Started](/zh_cn/)
+[Getting Start](/zh_cn/)
 
 ![](/static/background.jpg)
