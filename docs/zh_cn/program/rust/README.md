@@ -119,5 +119,6 @@
         F: Fn(String) -> T,
     {
         f("name".to_owned()).await?;
+        Ok(())
     }
     ```
