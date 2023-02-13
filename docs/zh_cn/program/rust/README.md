@@ -12,10 +12,10 @@
 
   - ## `serde_json`
     处理使用了`serde`提供的`Serialize`和`Desrialize`宏的`crates`库,
-    可将文字符串列化为自定义数据或者`json`数据，也可将数据反序列化为字符串
+    可将文字符串列反序列化为自定义数据或者`json`数据，也可将数据序列化为字符串
 
   - ## `json`
-    `json`数据反序列化和序列化库
+    `json` `parser`
 
   - ## `poem`
     `web`后端框架
