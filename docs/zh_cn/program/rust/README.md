@@ -19,6 +19,8 @@
 
   - ## `poem`
     `web`后端框架
+  - ## `poem-openapi`
+    提供`poem` `openapi`的支持
 
   - ## `sea-orm`
     `rust`较为好用的orm
@@ -34,8 +36,8 @@
   - ## `reqwest`
     常用的http client
     - 常用`features`:
-      - `json`: 提供json数据序列化和反序列化方法
-      - `cookies`: 提供`cookie`存储方法
+      - `json`: 提供json数据反序列化方法
+      - `cookies`: 提供`cookie`存储桶
 
   - ## `anyhow`
     万能`Result`处理库
@@ -79,6 +81,12 @@
   - ## `tracing-appender`
     附加日志处理库
 
+  - ## `ureq`
+    一个简单，安全的`http client`
+    - 常用`features`:
+      - `json`: 提供`json`数据反序列化方法,
+      - `cookies`: 提供`cookie`存储桶
+
 - # 日志处理
   ```rust
   use anyhow::Result;
@@ -100,3 +108,16 @@
     build()?;
   }
   ```
+
+- # 异步`future`编写
+    ```rust
+    use anyhow::Result;
+
+    async fn future_fn<T, F>(f: F) -> Result<()>
+    where
+        T: Future<Output = Result<()>> + 'static,
+        F: Fn(String) -> T,
+    {
+        f("name".to_owned()).await?;
+    }
+    ```
