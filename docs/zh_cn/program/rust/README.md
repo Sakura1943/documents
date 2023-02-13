@@ -112,6 +112,7 @@
 - # 异步`future`编写
     ```rust
     use anyhow::Result;
+    use std::future::Future;
 
     async fn future_fn<T, F>(f: F) -> Result<()>
     where
