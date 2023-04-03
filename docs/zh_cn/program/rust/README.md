@@ -87,6 +87,9 @@
       - `json`: 提供`json`数据反序列化方法,
       - `cookies`: 提供`cookie`存储桶
 
+  - ## `trauma`
+    一个简单的`Downlaoder`下载器，有进度条显示(异步库)
+
 - # 日志处理
   ```rust
   use anyhow::Result;
