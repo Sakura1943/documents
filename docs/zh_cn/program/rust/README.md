@@ -90,6 +90,11 @@
   - ## `trauma`
     一个简单的`Downlaoder`下载器，有进度条显示(异步库)
 
+  - ## neon
+    `rust` 与 `nodejs`的绑定代码生成库,`safe`
+    - 使用:
+      npm install -g neon-cli; neon new `<project-name>`
+
 - # 日志处理
   ```rust
   use anyhow::Result;
